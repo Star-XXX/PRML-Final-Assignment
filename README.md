@@ -6,12 +6,19 @@
 
 ## 项目文件结构
 ├── Linear_Regression.py # 基于梯度下降、自定义BFGS等优化方法的线性回归实现 
+
 ├── RFR.py # 随机森林回归模型代码 
+
 ├── Ridge.py # 岭回归模型代码 
+
 ├── boston.mat # 波士顿房价数据集（MATLAB 格式） 
+
 ├── boston.xlsx # 波士顿房价数据集（Excel 格式） 
+
 ├── data_processing.ipynb # 数据处理和可视化的 Jupyter Notebook 
+
 ├── requirements.txt # 项目依赖的 Python 库列表 
+
 └── README.md # 项目说明文档
 
 
@@ -51,13 +58,13 @@
 1. 克隆项目到本地：
    ```bash
    git clone https://github.com/your-repo/boston-house-prediction.git
-   cd boston-house-prediction
+   cd boston-house-prediction```
 2. 创建虚拟环境并激活（可选）：
-python -m venv boston_env
+```python -m venv boston_env
 source boston_env/bin/activate  # Linux/macOS
-boston_env\Scripts\activate     # Windows
+boston_env\Scripts\activate     # Windows```
 3. 安装依赖：
-pip install -r requirements.txt
+``pip install -r requirements.txt``
 4. 确保必要的文件（如 boston.xlsx）已放置于项目根目录下。
 ## 使用说明
 
@@ -69,17 +76,17 @@ pip install -r requirements.txt
 #### 线性回归
 运行 `Linear_Regression.py`：
 ```bash
-python Linear_Regression.py
+python Linear_Regression.py```
 输出梯度下降（GD）、随机梯度下降（SGD）、拟牛顿法（BFGS）等优化方法的性能对比，并展示损失曲线与 R² 曲线。
 
 #### 随机森林回归
 运行 `RFR.py`：
 ```bash
-python RFR.py
+python RFR.py```
 输出随机森林模型的训练集和测试集性能，并展示模型对波士顿房价的预测结果。
 
 #### 岭回归
 运行 `Ridge.py`：
 ```bash
-python Ridge.py
+python Ridge.py```
 输出岭回归模型的性能，并与普通线性回归进行对比。
